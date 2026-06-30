@@ -1,4 +1,51 @@
-baseURL = "/"
+baseURL = "https://Dreammaking-cin.github.io/"
 languageCode = "zh-CN"
-title = "上官子皓的博客"
+title = "Dreammaking的博客"
 theme = "PaperMod"
+[params]
+  # 网站全局配置
+  description = "一个记录编程、学习笔记的个人博客"
+  author = "Dreammaking"
+  defaultTheme = "auto" # light/dark/auto
+  hideDescriptionInList = false
+
+  # 首页信息
+  profileMode = true
+  profileImage = "avatar.png" # 后续可放入头像图片
+  profileTitle = "Dreammaking"
+  profileSubtitle = "计算机专业｜后端开发学习者"
+  profileDescription = "记录学习之路，沉淀技术笔记"
+  profileButtons = [
+    {name = "文章归档", url = "/archives"},
+    {name = "分类", url = "/categories"},
+    {name = "标签", url = "/tags"},
+  ]
+
+  # 侧边栏设置
+  showToc = true
+  tocOpen = true
+  showBreadcrumbs = true
+  showReadingTime = true
+  dateFormat = "2006-01-02"
+
+  # 导航菜单
+  menuMain = [
+    {name = "首页", url = "/", weight = 1},
+    {name = "全部文章", url = "/posts", weight = 2},
+    {name = "归档", url = "/archives", weight = 3},
+    {name = "分类", url = "/categories", weight = 4},
+    {name = "标签", url = "/tags", weight = 5},
+    {name = "关于我", url = "/about", weight = 6},
+  ]
+
+# 菜单归档页面开启
+[outputFormats]
+[outputFormats.archives]
+baseName = "archives"
+isPlainText = false
+isStandalone = true
+
+# 开启分类、标签页面
+[taxonomies]
+category = "categories"
+tag = "tags"
